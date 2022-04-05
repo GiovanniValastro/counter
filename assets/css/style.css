@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background: url(../imgs/technology-background.png);
+    background-color: #00000099;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.container {
+    background: linear-gradient(to right, #005a00cc 0%, #002200cc 100%);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 40px;
+    border: 3px solid black;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    width: 330px;
+    height: 80px;
+    padding: 10px;
+}
+
+.box_counter {
+    width: 330px;
+    height: auto;
+    background-color: #646464cc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.numb {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 36px;
+    margin: 15px 10px 15px 10px;
+}
+
+.decrement {
+    color: red;
+    border-color: red;
+}
+
+.increment {
+    color: green;
+    border-color: green;
+}
+
+.reset {
+    border-color: orange;
+    background-image: url(../imgs/redo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.save {
+    border-color: #eab14d;
+    background-image: url(../imgs/clock.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button img {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.decrement:hover {
+   background-color: #e46969;
+
+}
+
+.increment:hover {
+    background-color: #34ac34;
+}
+
+.reset:hover {
+    background-color: #fdc04D;
+}
+
+.save:hover {
+     background-color: #f2bc60;
+}
+
+.box_saved_numb {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.saved_numb {
+    width: 65px;
+    height: 65px;
+    background-color: #001100cc;
+    font-size: 30px;
+    padding-top: 15px;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.alr {
+    width: 300px;
+    height: 50px;
+    background-color:  #700505;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 7px;
+    border: red 2px solid;
+    opacity: 0; 
+}
+
+.alr.active {
+    animation: move;
+    animation-duration: 4s;
+}
+
+@keyframes move {
+    10%{opacity: 1;}
+    70% {opacity: 1;}  
+    100% {opacity: 0;}
+}
